@@ -1,0 +1,11 @@
+{% extends 'base.html' %}
+
+{% block titulo %}{{ titulo|default:"Titulo" }}{% endblock titulo %}
+
+{% block subtitulo %}{{ subtitulo }}{% endblock subtitulo %}
+
+{% block bar %}
+    {% for item in menu %}
+        <div class="link"><a href="#">{{ item }}</a></div>
+    {% endfor %}
+{% endblock bar %}
